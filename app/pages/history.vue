@@ -39,7 +39,7 @@
       <!-- 展开按钮 -->
       <button
         v-if="!isNavOpen"
-        class="nav-toggle-btn fixed left-0 sm:left-4 top-1/2 -translate-y-1/2 z-40 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-r-lg p-2.5 sm:p-3 shadow-lg transition-all duration-300 hover:shadow-xl"
+        class="nav-toggle-btn fixed left-0 sm:left-4 top-1/2 -translate-y-1/2 z-40 bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-r-lg p-2.5 sm:p-3 shadow-lg transition-all duration-300 hover:shadow-xl"
         @click="isNavOpen = true"
       >
         <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -196,6 +196,7 @@ function scrollToSection(id: string, event: Event) {
 }
 </script>
 
+<!-- cosmo-only-tailwind-disable -->
 <style scoped>
 .nav-sidebar {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
