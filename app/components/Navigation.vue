@@ -47,7 +47,7 @@ defineProps<{ hidden: boolean }>();
 const NavItems = ref([
   { title: '主页', description: '111', path: '/' },
   { title: '组织历程', description: '111', path: '/history' },
-  { title: '详细介绍', description: '111', path: '/introduction' },
+  { title: '详细介绍', description: '111', path: '/about' },
 ]);
 
 // 滚动阈值（像素），超过此值切换为“短”样式
