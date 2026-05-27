@@ -6,7 +6,7 @@
   </div>
   <div>
     <footer class="mt-1 text-center text-gray-500 dark:text-gray-400 text-sm">
-      <p>COSMO 智慧校园平台 © 2025 版权所有</p>
+      <p>COSMO 智慧校园平台 © 2026 版权所有</p>
     </footer>
   </div>
 </template>

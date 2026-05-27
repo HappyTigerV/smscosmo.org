@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-blue-50 via-blue-100 to-indigo-50 relative overflow-hidden">
+  <div class="min-h-screen bg-linear-to-br from-blue-50 via-blue-100 to-indigo-50 relative overflow-hidden">
     <!-- 动态粒子背景 -->
     <div class="absolute inset-0 z-0">
       <div
@@ -21,11 +21,11 @@
 
     <!-- 动态光晕效果 -->
     <div
-      class="fixed right-10 top-20 h-1/3 w-1/5 bg-gradient-to-r from-blue-200 to-cyan-100 blur-[120px] -z-10 transition-all duration-1000"
+      class="fixed right-10 top-20 h-1/3 w-1/5 bg-linear-to-r from-blue-200 to-cyan-100 blur-[120px] -z-10 transition-all duration-1000"
       :style="`opacity: 0.${count / 2}; transform: translate(${count / 5}px, ${count / 10}px) rotate(${count / 2}deg);`"
     />
     <div
-      class="fixed bottom-20 left-20 h-1/3 w-1/5 bg-gradient-to-r from-indigo-200 to-purple-100 blur-[120px] -z-10 transition-all duration-1000"
+      class="fixed bottom-20 left-20 h-1/3 w-1/5 bg-linear-to-r from-indigo-200 to-purple-100 blur-[120px] -z-10 transition-all duration-1000"
       :style="`opacity: 0.${count / 2}; transform: translate(-${count / 5}px, -${count / 10}px) rotate(-${count / 2}deg);`"
     />
 
@@ -76,6 +76,7 @@ function particleStyle() {
 }
 </script>
 
+<!-- cosmo-only-tailwind-disable -->
 <style scoped>
 /* 自定义动画效果 */
 @keyframes float {
