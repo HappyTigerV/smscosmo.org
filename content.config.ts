@@ -6,21 +6,27 @@ export default defineContentConfig({
       type: 'page',
       source: 'history/**/*.md',
       schema: z.object({
-        date: z.string(),
+        date: z.string(), // 最晚编辑日期
+        session: z.number(), // 第n届
+        description: z.string().optional(), // 简短描述
       }),
     }),
     members: defineCollection({ // 人员介绍
       type: 'page',
       source: 'members/**/*.md',
       schema: z.object({
-        date: z.string(),
+        date: z.string(), // 最晚编辑日期
+        session: z.number(), // 第n届
+        description: z.string().optional(), // 简短描述
       }),
     }),
     projects: defineCollection({ // 项目介绍
       type: 'page',
       source: 'projects/**/*.md',
       schema: z.object({
-        date: z.string(),
+        date: z.string(), // 最晚编辑日期
+        link: z.string(), // 项目github链接
+        description: z.string().optional(), // 简短描述
       }),
     }),
   },
